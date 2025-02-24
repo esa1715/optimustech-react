@@ -19,7 +19,7 @@
 .navbar__container {
     display: flex;
     width: 80rem;
-    height: 2.75rem;
+    height: auto;
     justify-content: space-between;
     align-items: center;
     padding: 0 32px;
@@ -90,7 +90,7 @@
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 1020px){    
+@media screen and (max-width: 1024px){    
     .navbar__content, .navbar__logo {
         display: none;
         position: absolute;
@@ -105,6 +105,7 @@
         height: 162.5px;
         position: relative;
         top: 18px;
+        width: 100%;
     }
 
     .navbar__container img {

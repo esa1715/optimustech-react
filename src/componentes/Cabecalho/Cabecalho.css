@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", serif;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    height: 407px;
+    padding: 96px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h2 {
+    height: auto;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8E2424;
+}
+
+.cabecalho__tit {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 0 32px;
+    gap: 12px;
+}
+
+.cabecalho__tit h1 {
+    display: flex;
+    gap: 40px;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 60px;
+    color: #101828;
+}
+
+.cabecalho__text {
+    max-width: 792px;
+    padding-top: 12px;
+}
+
+.cabecalho__text p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #667085;
+}
