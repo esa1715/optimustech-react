@@ -93,15 +93,16 @@
 @media screen and (max-width: 1020px){    
     .navbar__content, .navbar__logo {
         display: none;
+        position: absolute;
     }
 
     .navbar {
-        height: 185px;
+        height: 204px;
     }
 
     .navbar__container {
         flex-direction: column;
-        height: 149px;
+        height: 168px;
         position: relative;
         top: 18px;
         justify-content: normal;
@@ -109,24 +110,14 @@
 
     .navbar__container img {
         position: relative;
-        top: 8.5px;
+        top: 8.5px;;
     }
 
-    .navbar__actions{
-        height: 96.5px;
+    .navbar__actions {
         flex-direction: column;
+        height: 106px;
+        gap: 18px;
         position: relative;
         top: 18px;
     }
-
-    .btnentrar {
-        position: relative;
-        top: 8.5px;
-    }
-
-    .btncadastrar {
-        position: relative;
-        top: 8.5px;
-    }
-    
 }
