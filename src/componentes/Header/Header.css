@@ -97,27 +97,25 @@
     }
 
     .navbar {
-        height: 204px;
+        height: 198.5px;
     }
 
     .navbar__container {
         flex-direction: column;
-        height: 168px;
+        height: 162.5px;
         position: relative;
         top: 18px;
-        justify-content: normal;
     }
 
     .navbar__container img {
         position: relative;
-        top: 8.5px;;
+        margin-top: 8.5px;
     }
 
     .navbar__actions {
         flex-direction: column;
-        height: 106px;
-        gap: 18px;
+        height: 100px;
         position: relative;
-        top: 18px;
+        margin-top: 18px;
     }
 }
