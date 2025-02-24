@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", serif;
+}  
+
+.navbar {
+    display: flex;
+    height: 5rem;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__container {
+    display: flex;
+    width: 80rem;
+    height: 2.75rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.navbar__container img {
+    display: flex;
+    width: 9.25rem;
+    height: 1.69rem;
+    gap: 8px;
+}
+
+.navbar__content {
+    display: flex;
+    width: 22.62rem;
+    height: 2rem;
+    gap: 40px;
+    align-items: center;
+}
+
+.navbar__content a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+    text-wrap: nowrap;
+}
+
+.navbar__logo {
+    width: 8.9rem;
+    height: 2rem;
+}
+
+.navbar__actions {
+    display: flex;
+    width: 12.9rem;
+    height: 2.75rem;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnentrar {
+    display: flex;
+    border-radius: 8px;
+    padding: 10px 18px;
+    gap: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+.btncadastrar {
+    display: flex;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 10px 18px;
+    gap: 8px;
+    text-align: center;
+    background-color: #8E2424;
+    border: 1px solid #8E2424;
+    box-shadow: 0px 1px 2px 0px #1018280D;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 428px){
+    .navbar__content, .navbar__logo {
+        display: none;
+    }
+
+    .navbar__container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar__actions {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
