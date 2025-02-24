@@ -90,19 +90,43 @@
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 1020px){    
     .navbar__content, .navbar__logo {
         display: none;
     }
 
-    .navbar__container{
-        flex-direction: column;
-        justify-content: space-between;
+    .navbar {
+        height: 185px;
     }
 
-    .navbar__actions {
+    .navbar__container {
         flex-direction: column;
-        justify-content: space-around;
+        height: 149px;
+        position: relative;
+        top: 18px;
+        justify-content: normal;
     }
 
+    .navbar__container img {
+        position: relative;
+        top: 8.5px;
+    }
+
+    .navbar__actions{
+        height: 96.5px;
+        flex-direction: column;
+        position: relative;
+        top: 18px;
+    }
+
+    .btnentrar {
+        position: relative;
+        top: 8.5px;
+    }
+
+    .btncadastrar {
+        position: relative;
+        top: 8.5px;
+    }
+    
 }
