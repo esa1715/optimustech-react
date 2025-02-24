@@ -90,7 +90,7 @@
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 428px){
+@media screen and (max-width: 1020px){
     .navbar__content, .navbar__logo {
         display: none;
     }
