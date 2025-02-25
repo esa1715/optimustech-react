@@ -1,7 +1,7 @@
 .cabecalho {
     display: flex;
     flex-direction: column;
-    height: 407px;
+    height: auto;
     padding: 96px 0;
     justify-content: space-between;
     align-items: center;
@@ -44,3 +44,9 @@
     text-align: center;
     color: #667085;
 }
+
+/* @media screen and (max-width: 1024px){
+    .cabecalho {
+
+    }
+} */

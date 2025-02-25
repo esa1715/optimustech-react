@@ -92,10 +92,8 @@
 
     .navbar__container {
         flex-direction: column;
-        height: 162.5px;
-        position: relative;
-        top: 18px;
-        width: 100%;
+        height: auto;
+
     }
 
     .navbar__container img {
@@ -106,7 +104,7 @@
     .navbar__actions {
         flex-direction: column;
         width: 9.25rem;
-        height: 100px;
+        height: auto;
         position: relative;
         margin-top: 18px;
     }
