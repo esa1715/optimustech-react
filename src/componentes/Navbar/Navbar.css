@@ -25,12 +25,14 @@
 .navbar__content {
     display: flex;
     width: 22.62rem;
-    height: 2rem;
+    height: auto;
     gap: 40px;
     align-items: center;
 }
 
 .navbar__content a {
+    width: auto;
+    height: auto;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -45,8 +47,8 @@
 
 .navbar__actions {
     display: flex;
-    width: 12.9rem;
-    height: 2.75rem;
+    width: auto;
+    height: auto;
     gap: 12px;
     align-items: center;
     justify-content: center;
@@ -87,7 +89,7 @@
     }
 
     .navbar {
-        height: 198.5px;
+        height: auto;
         padding: 5% 0;
     }
 

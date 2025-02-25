@@ -7,13 +7,20 @@
 }
 
 .metricaitem__tit {
-    width: fit-content;
+    width: 100%;
+    text-align: left;
     height: auto;
     font-weight: 600;
     font-size: 60px;
     line-height: 72px;
     letter-spacing: -2%;
     color: #8E2424;
+}
+
+.metricaitem__subtext {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .metricaitem__sub {
@@ -36,7 +43,8 @@
 }
 
 @media (max-width: 1024px) {
-    .metricaitem__tit, .metricaitem__sub, .metricaitem__text {
+    .metricaitem__tit, .metricaitem__subtext, .metricaitem__sub, .metricaitem__text {
         text-align: center;
+        align-items: center;
     }
 }

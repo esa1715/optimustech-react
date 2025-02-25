@@ -1,7 +1,7 @@
 .cabecalho {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 407px;
     padding: 96px 0;
     justify-content: space-between;
     align-items: center;
@@ -35,6 +35,7 @@
 .cabecalho__text {
     max-width: 792px;
     padding-top: 12px;
+    height: 83px;
 }
 
 .cabecalho__text p {
@@ -48,5 +49,10 @@
 @media screen and (max-width: 1024px){
     .cabecalho {
         padding: 5% 0;
+        height: auto;
+    }
+
+    .cabecalho__text {
+        height: auto;
     }
 }

@@ -22,25 +22,15 @@
     gap: 32px;
 }
 
-@media (max-width: 1024px) {
-    .metricas__container {
-        width: 100%;
-        gap: 32px;
+@media (max-width: 1241px) {
+    .metricas {
         padding: 5% 0;
     }
 
     .metricas__content {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         width: 100%;
-    }
-
-    .metricaitem {
-        flex: 1 1 100%;
-        max-width: 100%;
-        display: flex;
-        align-items: center;
+        justify-content: center;
     }
 }
