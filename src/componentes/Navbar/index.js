@@ -2,8 +2,8 @@ import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <nav className='navbar'>
-        <div className='navbar__container'>
+        <div className='navbar'>
+        <nav className='navbar__container'>
             <img src='./imagens/OptimusTech.png' alt='Logo da Optimus Tech'></img>
             <div className='navbar__content'>
                 <a href='' className='btnhome'>Home</a>
@@ -16,8 +16,8 @@ const Navbar = () => {
                 <a href='' className='btnentrar'>Entrar</a>
                 <a href='' className='btncadastrar'>Cadastrar</a>
             </div>
-        </div>
         </nav>
+        </div>
     )  
 }
 
