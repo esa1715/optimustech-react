@@ -26,6 +26,7 @@
     .metricas__container {
         width: 100%;
         gap: 32px;
+        padding: 5% 0;
     }
 
     .metricas__content {

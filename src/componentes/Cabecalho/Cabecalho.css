@@ -45,8 +45,8 @@
     color: #667085;
 }
 
-/* @media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px){
     .cabecalho {
-
+        padding: 5% 0;
     }
-} */
+}
