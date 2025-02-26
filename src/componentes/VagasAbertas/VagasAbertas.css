@@ -41,6 +41,7 @@
 @media (max-width: 1024px) {
     .vagas__abertas {
         width: 100%;
+        height: auto;
     }
 
     .vagas__abertas__container {

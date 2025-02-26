@@ -1,0 +1,94 @@
+.depoimentos {
+    display: flex;
+    height: 500px;
+    padding-bottom: 96px;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+.depoimentos__content {
+    display: flex;
+    flex-direction: column;
+    width: 1216px;
+    height: 404px;
+    border-radius: 16px;
+    padding: 64px;
+    gap: 32px;
+    background: #C3191908;
+}
+
+.depoimentos__text {
+    display: flex;
+    flex-direction: column;
+    width: 1088px;
+    height: 124px;
+    gap: 16px;
+}
+
+.depoimentos__sub {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #8E2424;
+}
+
+.depoimentos__com {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    text-align: center;
+    color: #101828;
+}
+
+.depoimentos__atribuicao {
+    display: flex;
+    flex-direction: column;
+    width: 1088px;
+    height: 120px;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos__avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 200px;
+}
+
+.depoimentos__nec {
+    display: flex;
+    flex-direction: column;
+    width: 1088px;
+    height: 48px;
+    gap: 4px;
+}
+
+.depoimentos__nome {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #101828;
+}
+
+.depoimentos__cargo {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #667085;
+}
+
+@media screen and (max-width: 1024px) {
+    .depoimentos, .depoimentos__content, .depoimentos__text, .depoimentos__sub, .depoimentos__com, .depoimentos__atribuicao {
+        width: 100%;
+        height: auto;
+    }
+
+    .depoimentos {
+        padding: 5% 0;
+    }
+}
