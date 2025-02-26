@@ -1,0 +1,64 @@
+.vaga {
+    display: flex;
+    width: 768px;
+    height: 136px;
+    border-radius: 16px;
+    border-width: 1px;
+    padding: 24px 24px 28px 24px;
+    gap: 24px;
+    color: #FFFFFF;
+    border: 1px solid #EAECF0;
+}
+
+.vaga__content {
+    display: flex;
+    flex-direction: column;
+    width: 728px;
+    height: 84px;
+    gap: 32px;
+}
+
+.vaga__tit {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828;
+    text-wrap: nowrap;
+    text-align: left;
+}
+
+.vaga__info {
+    display: flex;
+    width: 720px;
+    gap: 24px;
+}
+
+.vaga__periodo, .vaga__salario {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+@media screen and (max-width: 1024px) {
+    .vaga {
+        width: 100%;
+        height: auto;
+    }
+
+    .vaga__content {
+        width: 100%;
+        height: auto;
+    }
+
+    .vaga__tit {
+        text-align: center;
+    }
+
+    .vaga__info {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    
+}

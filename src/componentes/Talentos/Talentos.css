@@ -1,14 +1,7 @@
-.vagas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .talentos {
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 1280px;
     height: 602px;
     justify-content: space-between;
     align-items: center;
@@ -17,8 +10,8 @@
 .talentos__text {
     display: flex;
     flex-direction: column;
-    width: 768px;
-    height: 138px;
+    width: auto;
+    height: auto;
     gap: 20px;
     
 }
@@ -26,16 +19,15 @@
 .talentos__badtit {
     display: flex;
     flex-direction: column;
-    width: 768px;
-    height: 88px;
+    width: auto;
+    height: auto;
     gap: 16px;
-    justify-content: center;
     align-items: center;
 }
 
 .talentos__badge {
-    width: 125;
-    height: 28;
+    width: auto;
+    height: auto;
     mix-blend-mode: Multiply;
     border-radius: 16px;
     padding: 4px 12px;
@@ -48,7 +40,7 @@
 }
 
 .talentos__title {
-    width: 100%;
+    width: auto;
     height: auto;
     font-weight: 600;
     font-size: 36px;
@@ -69,36 +61,26 @@
 }
 
 .talentos__img {
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
+@media (max-width: 1216px) {
+    .talentos__img {
+        width: 100%;
+    }
+}
+
 @media (max-width: 1024px) {
-    .vagas {
-        padding-top: 5%;
-    }
-    
     .talentos {
-        width: auto;
+        width: 100%;
         height: auto;
+        padding: 5% 0;
     }
 
-    .talentos__text{
-        width: auto;
-        height: auto;
-
-    }
-
-    .talentos__badtit {
-        width: auto;
-        height: auto;
-    }
-
-    .talentos__title {
-        height: auto;
-    }
-
-    .talento__sub {
+    .talentos__img {
+        padding-top: 5%;
+        width: 100%;
         height: auto;
     }
 }

@@ -1,0 +1,16 @@
+.vagas {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 64px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .vagas {
+        padding: 0;
+        gap: 0;
+    }
+}

@@ -106,13 +106,14 @@
 
     .navbar__actions {
         flex-direction: column;
-        width: 9.25rem;
+        width: auto;
         height: auto;
         position: relative;
         margin-top: 18px;
     }
 
     .btnentrar, .btncadastrar {
-        width: 9.25rem;
-        flex-direction: column;    }
+        width: auto;
+        flex-direction: column;
+    }
 }

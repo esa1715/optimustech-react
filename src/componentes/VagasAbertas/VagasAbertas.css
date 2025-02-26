@@ -1,0 +1,61 @@
+.vagas__abertas {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    height: 940px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vagas__abertas__container {
+    display: flex;
+    width: 1280px;
+    height: auto;
+    padding: 0 32px;
+    gap: 64px;
+    justify-content: center;
+}
+
+.vagas__abertas__content {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    height: auto;
+    gap: 32px;
+}
+
+.vagas__abertas__area {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #101828;
+    text-align: left;
+}
+
+.vagas__abertas__items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .vagas__abertas {
+        width: 100%;
+    }
+
+    .vagas__abertas__container {
+        width: 100%;
+        height: auto;
+        padding: 5% 0;
+    }
+
+    .vagas__abertas__content {
+        width: 100%;
+        height: auto;
+    }
+
+    .vagas__abertas__area {
+        text-align: center;
+    }
+
+}
