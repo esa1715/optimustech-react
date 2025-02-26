@@ -7,3 +7,8 @@
     text-decoration: none;
     font-family: "Inter", serif;
 }
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
