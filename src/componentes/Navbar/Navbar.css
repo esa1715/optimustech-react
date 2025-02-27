@@ -30,6 +30,14 @@
     align-items: center;
 }
 
+.navbar__content ul{
+    display: flex;
+    width: 22.62rem;
+    height: auto;
+    gap: 40px;
+    align-items: center;
+}
+
 .navbar__content a {
     width: auto;
     height: auto;
@@ -46,6 +54,15 @@
 }
 
 .navbar__actions {
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__actions ul {
     display: flex;
     width: auto;
     height: auto;
@@ -82,6 +99,18 @@
     color: #FFFFFF;
 }
 
+.abrir__menu {
+    display: none;
+}
+ 
+.navbar__mobile {
+    display: none;
+}
+
+.overlay-menu {
+    display: none;
+}
+
 @media screen and (max-width: 1024px){    
     .navbar__content, .navbar__logo {
         display: none;
@@ -94,26 +123,71 @@
     }
 
     .navbar__container {
-        flex-direction: column;
+        width: 100%;
         height: auto;
-
     }
 
     .navbar__container img {
-        position: relative;
-        margin-top: 8.5px;
+        display: flex;
+        align-items: center;
     }
 
     .navbar__actions {
-        flex-direction: column;
-        width: auto;
-        height: auto;
-        position: relative;
-        margin-top: 18px;
+        display: none;
     }
 
-    .btnentrar, .btncadastrar {
-        width: auto;
+    .abrir__menu {
+        display: flex;
+        padding: 5%;
+    }
+
+    .navbar__mobile {
+        display: flex;
         flex-direction: column;
+        background: #FDF8F8;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99;
+        width: 70%;
+        overflow: hidden;
+    }
+
+    .btn__fechar {
+        display: flex;
+        position: fixed;
+        padding: 5%;
+        align-items: center;
+    }
+
+    .navbar__mobile nav ul {
+        padding: 15% 5%;
+        text-align: right;
+        }
+
+    .navbar__mobile nav ul li a {
+        display: flex;
+        flex-direction: column;
+        color: #667085;
+        font-weight: 400;
+        padding: 5%;
+    }
+
+    .navbar__mobile nav ul li a:hover {
+        background: #8E2424;
+        color: #FFFFFF;
+        border-radius: 16px;
+    }
+
+    .overlay-menu {
+        display: flex;
+        background: #000000a7;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 88;
     }
 }
