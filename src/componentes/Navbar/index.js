@@ -4,15 +4,13 @@ import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 const Navbar = () => {
-    // Estado para controlar a visibilidade do menu
+
     const [menuOpen, setMenuOpen] = useState(false);
 
-    // Função para alternar o menu
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // Função para fechar o menu ao clicar em um item
     const closeMenu = () => {
         setMenuOpen(false);
     };
@@ -38,12 +36,10 @@ const Navbar = () => {
                 </nav>
             </div>
 
-            {/* Ícone do menu hambúrguer */}
             <div className='abrir__menu' onClick={toggleMenu}>
                 <FontAwesomeIcon icon={faBars} style={{color: "#8e2424"}} />
             </div>
 
-            {/* Menu lateral (aparece quando menuOpen é true) */}
             {menuOpen && (
                 <>
                     <div className='navbar__mobile'>
@@ -62,7 +58,7 @@ const Navbar = () => {
                         </nav>
                     </div>
 
-                    {/* Overlay para escurecer o fundo (opcional) */}
+
                     <div className='overlay-menu' onClick={toggleMenu}></div>
                 </>
             )}
