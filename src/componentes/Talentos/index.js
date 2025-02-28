@@ -10,7 +10,7 @@ const Talentos = () => {
                 </div>
                 <h3 className='talentos__sub'>Somos uma equipe 100% remota com pessoas do Brasil inteiro.</h3>
                 </div>
-                <img src='./imagens/Reunião.png' className='talentos__img' alt='Pessoas em uma reunião'></img>
+                <img src='/imagens/Reunião.png' className='talentos__img' alt='Pessoas em uma reunião'></img>
             </section>
     )
 }

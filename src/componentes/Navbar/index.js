@@ -1,7 +1,7 @@
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
 
@@ -14,6 +14,27 @@ const Navbar = () => {
     const closeMenu = () => {
         setMenuOpen(false);
     };
+
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflow = 'hidden';
+            document.documentElement.style.overflow = 'hidden'; // Bloqueia o scroll do <html>
+            document.body.style.position = 'fixed'; // Evita o scroll no mobile
+            document.body.style.width = '100%'; // Previne bugs no mobile
+        } else {
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
+            document.body.style.position = '';
+            document.body.style.width = '';
+        }
+
+        return () => {
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
+            document.body.style.position = '';
+            document.body.style.width = '';
+        };
+    }, [menuOpen]);
 
     return (
         <div className='navbar'>

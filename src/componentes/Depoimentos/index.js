@@ -9,7 +9,7 @@ const Depoimentos = () => {
                     <span className='depoimentos__com'>OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</span>
                 </div>
                 <div className='depoimentos__atribuicao'>
-                    <img src='./imagens/Avatar.png' className='depoimentos__avatar' alt='Ícone de perfil do usuário'></img>
+                    <img src='/imagens/Avatar.png' className='depoimentos__avatar' alt='Ícone de perfil do usuário'></img>
                     <div className='depoimentos__nec'>
                         <span className='depoimentos__nome'>Júlia Castro</span>
                         <span className='depoimentos__cargo'>Desenvolvedora Web</span>
