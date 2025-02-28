@@ -1,0 +1,106 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+.background__modal {
+    display: flex;
+    width: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalcadastrar {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    align-items: center;
+    background-color: #C3191908;
+    padding: 5%;
+    border-width: 1px;
+    border: 1px solid #000;
+}
+
+.modalcadastrar img {
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 8px;
+    padding: 5%;
+}
+
+.modalcadastrar__content {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: auto;
+    height: auto;
+}
+
+.modalcadastrar__input{
+    background: transparent;
+    width: auto;
+    height: auto;
+    padding: 5% 1%;
+}
+
+::placeholder {
+    color: #667085;
+    font-weight: 500;
+}
+
+.modal__btncadastrar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 5%;
+    text-align: center;
+    background-color: #8E2424;
+    border: 1px solid #8E2424;
+    box-shadow: 0px 1px 2px 0px #1018280D;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.modal__contato {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding-top: 10%;
+    color: #667085;
+    font-weight: 500;
+}
+
+.modalcadastrar__icons {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+    justify-content: space-around;
+    font-size: larger;
+}
+
+.modalcadastrar__icons ul {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    justify-content: space-around;
+    font-size: larger;
+}
+
+.modalcadastrar__icons ul li{
+    display: flex;
+    justify-content: space-around;
+}
+
+.modalcadastrar__icons ul li a{
+    display: flex;
+    justify-content: space-around;
+}
