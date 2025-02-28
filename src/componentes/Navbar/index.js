@@ -2,25 +2,25 @@ import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
+import Modal from '../Modal';
+
 
 const Navbar = () => {
-
     const [menuOpen, setMenuOpen] = useState(false);
+    const [modalOpen, setModalOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
+    const toggleMenu = () => setMenuOpen(!menuOpen);
+    const closeMenu = () => setMenuOpen(false);
 
-    const closeMenu = () => {
-        setMenuOpen(false);
-    };
+    const toggleModal = () => setModalOpen(!modalOpen);
+    const closeModal = () => setModalOpen(false);
 
     useEffect(() => {
         if (menuOpen) {
             document.body.style.overflow = 'hidden';
-            document.documentElement.style.overflow = 'hidden'; // Bloqueia o scroll do <html>
-            document.body.style.position = 'fixed'; // Evita o scroll no mobile
-            document.body.style.width = '100%'; // Previne bugs no mobile
+            document.documentElement.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
+            document.body.style.width = '100%';
         } else {
             document.body.style.overflow = '';
             document.documentElement.style.overflow = '';
@@ -51,8 +51,8 @@ const Navbar = () => {
                 <div className='navbar__logo'></div>
                 <nav className='navbar__actions'>
                     <ul>
-                        <li><a href='https://optimustech-react.vercel.app/' className='btnentrar' target="_blank" rel="noreferrer" onClick={closeMenu}>Entrar</a></li>
-                        <li><a href='https://optimustech-react.vercel.app/' className='btncadastrar' target="_blank" rel="noreferrer" onClick={closeMenu}>Cadastrar</a></li>
+                        <li><a href='#' className='btnentrar' onClick={toggleModal}>Entrar</a></li>
+                        <li><a href='#' className='btncadastrar' onClick={toggleModal}>Cadastrar</a></li>
                     </ul>
                 </nav>
             </div>
@@ -60,6 +60,8 @@ const Navbar = () => {
             <div className='abrir__menu' onClick={toggleMenu}>
                 <FontAwesomeIcon icon={faBars} style={{color: "#8e2424"}} />
             </div>
+
+            {modalOpen && <Modal isOpen={modalOpen} onClose={closeModal} />}
 
             {menuOpen && (
                 <>
@@ -73,12 +75,11 @@ const Navbar = () => {
                                 <li><a href='https://vercel.com/eriks-projects-80eba853' className='btnprodutos' target="_blank" rel="noreferrer" onClick={closeMenu}>Produtos</a></li>
                                 <li><a href='https://github.com/esa1715' className='btnrecursos' target="_blank" rel="noreferrer" onClick={closeMenu}>Recursos</a></li>
                                 <li><a href='https://www.linkedin.com/in/erikalves12' className='btnsobrenos' target="_blank" rel="noreferrer" onClick={closeMenu}>Sobre nós</a></li>
-                                <li><a href='https://optimustech-react.vercel.app/' className='btnhome' target="_blank" rel="noreferrer" onClick={closeMenu}>Entrar</a></li>
-                                <li><a href='https://optimustech-react.vercel.app/' className='btnhome' target="_blank" rel="noreferrer" onClick={closeMenu}>Cadastrar</a></li>
+                                <li><a href='#' className='bthome' onClick={toggleModal}>Entrar</a></li>
+                                <li><a href='#' className='btnhome' onClick={toggleModal}>Cadastrar</a></li>
                             </ul>
                         </nav>
                     </div>
-
 
                     <div className='overlay-menu' onClick={toggleMenu}></div>
                 </>
