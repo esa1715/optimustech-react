@@ -69,7 +69,7 @@ const Navbar = () => {
                         <div className='navbar__mobile__x' onClick={toggleMenu}>
                             <FontAwesomeIcon icon={faXmark} style={{color: "#8e2424"}} />
                         </div>
-                        <nav>
+                        <nav className='navbar__mobile__content'>
                             <ul>
                                 <li><a href='https://optimustech-react.vercel.app/' className='btnhome' target="_blank" rel="noreferrer" onClick={closeMenu}>Home</a></li>
                                 <li><a href='https://vercel.com/eriks-projects-80eba853' className='btnprodutos' target="_blank" rel="noreferrer" onClick={closeMenu}>Produtos</a></li>

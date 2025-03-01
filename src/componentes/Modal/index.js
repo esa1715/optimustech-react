@@ -1,11 +1,32 @@
-import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { useState, useEffect } from 'react';
 import './Modal.css';
 
 const Modal = ({ isOpen, onClose }) => {
+    useEffect(() => {
+            if (isOpen) {
+                document.body.style.overflow = 'hidden';
+                document.documentElement.style.overflow = 'hidden';
+                document.body.style.position = 'fixed';
+                document.body.style.width = '100%';
+            } else {
+                document.body.style.overflow = '';
+                document.documentElement.style.overflow = '';
+                document.body.style.position = '';
+                document.body.style.width = '';
+            }
+    
+            return () => {
+                document.body.style.overflow = '';
+                document.documentElement.style.overflow = '';
+                document.body.style.position = '';
+                document.body.style.width = '';
+            };
+        }, [isOpen]);
+
 
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');

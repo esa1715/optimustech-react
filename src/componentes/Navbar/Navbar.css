@@ -164,6 +164,10 @@
         align-items: center;
     }
 
+    .navbar__mobile__content {
+        padding-bottom: 5%;
+    }
+
     .navbar__mobile nav ul {
         padding: 5%;
         text-align: right;
