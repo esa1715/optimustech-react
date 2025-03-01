@@ -156,15 +156,16 @@
         overflow-y: auto;
     }
 
-    .btn__fechar {
+    .navbar__mobile__x {
         display: flex;
-        position: fixed;
+        position: relative;
+        left: 0;
         padding: 5%;
         align-items: center;
     }
 
     .navbar__mobile nav ul {
-        padding: 15% 5%;
+        padding: 5%;
         text-align: right;
         }
 

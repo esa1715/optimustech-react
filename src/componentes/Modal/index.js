@@ -26,7 +26,7 @@ const Modal = ({ isOpen, onClose }) => {
     return (
         <div className='background__modal' onClick={onClose}>
             <div className='modal' onClick={(e) => e.stopPropagation()}>
-                <div className='btn__fechar' onClick={onClose}>
+                <div className='modal__x' onClick={onClose}>
                     <FontAwesomeIcon icon={faXmark} style={{color: "#8e2424"}} />
                 </div>
                 <img src='/imagens/OptimusTech.png' alt='Logo da Optimus Tech' />

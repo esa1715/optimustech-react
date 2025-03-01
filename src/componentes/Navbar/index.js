@@ -66,7 +66,7 @@ const Navbar = () => {
             {menuOpen && (
                 <>
                     <div className='navbar__mobile'>
-                        <div className='btn__fechar' onClick={toggleMenu}>
+                        <div className='navbar__mobile__x' onClick={toggleMenu}>
                             <FontAwesomeIcon icon={faXmark} style={{color: "#8e2424"}} />
                         </div>
                         <nav>
@@ -75,8 +75,8 @@ const Navbar = () => {
                                 <li><a href='https://vercel.com/eriks-projects-80eba853' className='btnprodutos' target="_blank" rel="noreferrer" onClick={closeMenu}>Produtos</a></li>
                                 <li><a href='https://github.com/esa1715' className='btnrecursos' target="_blank" rel="noreferrer" onClick={closeMenu}>Recursos</a></li>
                                 <li><a href='https://www.linkedin.com/in/erikalves12' className='btnsobrenos' target="_blank" rel="noreferrer" onClick={closeMenu}>Sobre nós</a></li>
-                                <li className='bthome' onClick={toggleModal}>Entrar</li>
-                                <li className='btnhome' onClick={toggleModal}>Cadastrar</li>
+                                <li><a className='btnhome' onClick={toggleModal}>Entrar</a></li>
+                                <li><a className='btnhome' onClick={toggleModal}>Cadastrar</a></li>
                             </ul>
                         </nav>
                     </div>

@@ -30,7 +30,7 @@
     position: relative;
 }
 
-.btn__fechar {
+.modal__x {
     position: absolute;
     top: 1%;
     right: 1%;
