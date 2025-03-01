@@ -20,7 +20,7 @@ const Formulario = () => {
                 <div className='formulario__email'>
                     <input type='email' className='formulario__input' placeholder='Seu e-mail'>
                     </input>
-                    <button className='btncadastrar' onClick={toggleModal}>Cadastrar</button>
+                    <button className='formulario__btncadastrar' onClick={toggleModal}>Cadastrar</button>
                 </div>
             </div>
             <span className='direitos'>© 2022 OptimusTech. Todos os direitos reservados.</span>
