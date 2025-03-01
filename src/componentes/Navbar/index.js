@@ -51,8 +51,8 @@ const Navbar = () => {
                 <div className='navbar__logo'></div>
                 <nav className='navbar__actions'>
                     <ul>
-                        <li className='btnentrar' onClick={toggleModal}>Entrar</li>
-                        <li className='btncadastrar' onClick={toggleModal}>Cadastrar</li>
+                        <li className='navbar__btnentrar' onClick={toggleModal}>Entrar</li>
+                        <li className='navbar__btncadastrar' onClick={toggleModal}>Cadastrar</li>
                     </ul>
                 </nav>
             </div>

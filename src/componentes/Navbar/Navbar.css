@@ -71,7 +71,7 @@
     justify-content: center;
 }
 
-.btnentrar {
+.navbar__btnentrar, .navbar__btncadastrar {
     display: flex;
     border-radius: 8px;
     padding: 10px 18px;
@@ -82,9 +82,10 @@
     line-height: 24px;
     color: #667085;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.btncadastrar {
+.navbar__btnentrar:hover, .navbar__btncadastrar:hover {
     display: flex;
     border-radius: 8px;
     border-width: 1px;

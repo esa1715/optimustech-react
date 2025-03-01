@@ -1,5 +1,5 @@
 import './Formulario.css'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Modal from '../Modal';
 
 const Formulario = () => {
@@ -20,7 +20,7 @@ const Formulario = () => {
                 <div className='formulario__email'>
                     <input type='email' className='formulario__input' placeholder='Seu e-mail'>
                     </input>
-                    <a className='btncadastrar' onClick={toggleModal}>Cadastrar</a>
+                    <button className='btncadastrar' onClick={toggleModal}>Cadastrar</button>
                 </div>
             </div>
             <span className='direitos'>© 2022 OptimusTech. Todos os direitos reservados.</span>
