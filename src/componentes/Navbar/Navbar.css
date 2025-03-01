@@ -81,6 +81,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #667085;
+    cursor: pointer;
 }
 
 .btncadastrar {
@@ -97,6 +98,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .abrir__menu {
@@ -182,7 +184,7 @@
 
     .overlay-menu {
         display: flex;
-        background: #000000a7;
+        background: rgba(0, 0, 0, 0.75);
         width: 100%;
         height: 100%;
         position: fixed;

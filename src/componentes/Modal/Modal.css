@@ -27,6 +27,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.btn__fechar {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    padding: 5%;
+    cursor: pointer;
 }
 
 .modal img {

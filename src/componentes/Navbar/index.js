@@ -51,8 +51,8 @@ const Navbar = () => {
                 <div className='navbar__logo'></div>
                 <nav className='navbar__actions'>
                     <ul>
-                        <li><a href='#' className='btnentrar' onClick={toggleModal}>Entrar</a></li>
-                        <li><a href='#' className='btncadastrar' onClick={toggleModal}>Cadastrar</a></li>
+                        <li className='btnentrar' onClick={toggleModal}>Entrar</li>
+                        <li className='btncadastrar' onClick={toggleModal}>Cadastrar</li>
                     </ul>
                 </nav>
             </div>
@@ -75,8 +75,8 @@ const Navbar = () => {
                                 <li><a href='https://vercel.com/eriks-projects-80eba853' className='btnprodutos' target="_blank" rel="noreferrer" onClick={closeMenu}>Produtos</a></li>
                                 <li><a href='https://github.com/esa1715' className='btnrecursos' target="_blank" rel="noreferrer" onClick={closeMenu}>Recursos</a></li>
                                 <li><a href='https://www.linkedin.com/in/erikalves12' className='btnsobrenos' target="_blank" rel="noreferrer" onClick={closeMenu}>Sobre nós</a></li>
-                                <li><a href='#' className='bthome' onClick={toggleModal}>Entrar</a></li>
-                                <li><a href='#' className='btnhome' onClick={toggleModal}>Cadastrar</a></li>
+                                <li className='bthome' onClick={toggleModal}>Entrar</li>
+                                <li className='btnhome' onClick={toggleModal}>Cadastrar</li>
                             </ul>
                         </nav>
                     </div>

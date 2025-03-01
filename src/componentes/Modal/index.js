@@ -1,26 +1,62 @@
-import './Modal.css';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import PropTypes from 'prop-types';
-
-const loginConcluido = () => {
-    alert("Login realizado com sucesso! Para sugestões ou contato, clique em uma das redes sociais abaixo.");
-};
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import './Modal.css';
 
 const Modal = ({ isOpen, onClose }) => {
+
+    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
+    const [error, setError] = useState('');
+
     if (!isOpen) return null;
+
+    const handleLogin = () => {
+        if (!username.trim() || !email.trim()) {
+            alert('Por favor, preencha todos os campos.');
+            return;
+        }
+
+        setError('');
+        alert(`Bem-vindo(a) ${username}! seu login foi realizado com sucesso! Para sugestões ou contato, clique em uma das redes sociais abaixo.`);
+    };
 
     return (
         <div className='background__modal' onClick={onClose}>
             <div className='modal' onClick={(e) => e.stopPropagation()}>
+                <div className='btn__fechar' onClick={onClose}>
+                    <FontAwesomeIcon icon={faXmark} style={{color: "#8e2424"}} />
+                </div>
                 <img src='/imagens/OptimusTech.png' alt='Logo da Optimus Tech' />
+
                 <div className='modal__content'>
-                    <input type='text' placeholder='Digite seu nome de usuário' className='modal__input' />
+                    <input
+                        type='text'
+                        placeholder='Digite seu nome de usuário'
+                        className='modal__input'
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
                 </div>
+
                 <div className='modal__content'>
-                    <input type='email' placeholder='Digite seu e-mail' className='modal__input' />
+                    <input
+                        type='email'
+                        placeholder='Digite seu e-mail'
+                        className='modal__input'
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
                 </div>
-                <a href='#' className='modal__btnlogin' onClick={loginConcluido}>Login</a>
+
+                {error && <p className="modal__error">{error}</p>}
+
+                <button className='modal__btnlogin' onClick={handleLogin}>
+                    Login
+                </button>
+
                 <span className='modal__contato'>Minhas Redes</span>
                 <div className='modal__icons'>
                     <ul>
@@ -35,7 +71,7 @@ const Modal = ({ isOpen, onClose }) => {
                             </a>
                         </li>
                         <li>
-                            <a href='' target="_blank" rel="noreferrer">
+                            <a href='https://api.whatsapp.com/send/?phone=%2B5511933329021&text&type=phone_number&app_absent=0' target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={faWhatsapp} style={{ color: "#8e2424" }} />
                             </a>
                         </li>
