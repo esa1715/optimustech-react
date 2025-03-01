@@ -28,6 +28,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .modal__x {
@@ -51,7 +52,8 @@
     flex-direction: column;
     height: auto;
     width: auto;
-    padding: 5%;
+    padding: 10%;
+    gap: 10px;
 }
 
 .modal__input{
@@ -96,3 +98,10 @@
     justify-content: space-around;
     font-size: larger;
 }
+
+@media (orientation: landscape) {
+    .modal {
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+  }

@@ -60,9 +60,6 @@ const Modal = ({ isOpen, onClose }) => {
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                     />
-                </div>
-
-                <div className='modal__content'>
                     <input
                         type='email'
                         placeholder='Digite seu e-mail'
