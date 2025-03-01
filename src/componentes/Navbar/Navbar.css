@@ -174,15 +174,17 @@
         text-align: right;
         }
 
-    .navbar__mobile nav ul li a {
+    .navbar__mobile nav ul li a, .navbar__mobile nav ul li button {
         display: flex;
         flex-direction: column;
         color: #667085;
         font-weight: 500;
         padding: 5%;
+        width: 100%;
+        text-align: right;
     }
 
-    .navbar__mobile nav ul li a:hover {
+    .navbar__mobile nav ul li a:hover, .navbar__mobile nav ul li button:hover  {
         background: #8E2424;
         color: #FFFFFF;
         border-radius: 16px;
