@@ -7,26 +7,16 @@ import './Modal.css';
 
 const Modal = ({ isOpen, onClose }) => {
     useEffect(() => {
-            if (isOpen) {
-                document.body.style.overflow = 'hidden';
-                document.documentElement.style.overflow = 'hidden';
-                document.body.style.position = 'fixed';
-                document.body.style.width = '100%';
-            } else {
-                document.body.style.overflow = '';
-                document.documentElement.style.overflow = '';
-                document.body.style.position = '';
-                document.body.style.width = '';
-            }
-    
-            return () => {
-                document.body.style.overflow = '';
-                document.documentElement.style.overflow = '';
-                document.body.style.position = '';
-                document.body.style.width = '';
-            };
-        }, [isOpen]);
+        if (isOpen) {
+            document.body.classList.add('modal-open');
+        } else {
+            document.body.classList.remove('modal-open');
+        }
 
+        return () => {
+            document.body.classList.remove('modal-open'); // Limpa ao desmontar
+        };
+    }, [isOpen]);
 
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -41,14 +31,14 @@ const Modal = ({ isOpen, onClose }) => {
         }
 
         setError('');
-        alert(`Bem-vindo(a) ${username}! seu login foi realizado com sucesso! Para sugestões ou contato, clique em uma das redes sociais abaixo.`);
+        alert(`Bem-vindo(a) ${username}! Seu login foi realizado com sucesso! Para sugestões ou contato, clique em uma das redes sociais abaixo.`);
     };
 
     return (
         <div className='background__modal' onClick={onClose}>
             <div className='modal' onClick={(e) => e.stopPropagation()}>
                 <div className='modal__x' onClick={onClose}>
-                    <FontAwesomeIcon icon={faXmark} style={{color: "#8e2424"}} />
+                    <FontAwesomeIcon icon={faXmark} style={{ color: "#8e2424" }} />
                 </div>
                 <img src='/imagens/OptimusTech.png' alt='Logo da Optimus Tech' />
 
