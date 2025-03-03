@@ -4,7 +4,6 @@ import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
 import Modal from '../Modal';
 
-
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [modalOpen, setModalOpen] = useState(false);
