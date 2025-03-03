@@ -17,8 +17,6 @@ const Modal = ({ isOpen, onClose }) => {
     const toggleModalSucesso = () => setModalSucessoOpen(!modalSucessoOpen);
     const closeModalSucesso = () => setModalSucessoOpen(false);
 
-    
-
     useEffect(() => {
         if (isOpen) {
             document.body.classList.add('modal-open');
@@ -42,7 +40,7 @@ const Modal = ({ isOpen, onClose }) => {
             return;
         }
 
-        toggleModalSucesso();
+        toggleModalSucesso(); // Abre o modal de sucesso
     };
 
     return (
@@ -98,10 +96,10 @@ const Modal = ({ isOpen, onClose }) => {
                 </div>
             </div>
     
-            {modalSucessoOpen && <ModalSucesso msOpen={modalSucessoOpen} msClose={closeModalSucesso} />}
+            {/* Passando o username como prop para o ModalSucesso */}
+            {modalSucessoOpen && <ModalSucesso username={username} msOpen={modalSucessoOpen} msClose={closeModalSucesso} />}
         </>
     );
-    
 };
 
 Modal.propTypes = {
