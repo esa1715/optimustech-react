@@ -40,7 +40,7 @@ const Modal = ({ isOpen, onClose }) => {
             return;
         }
 
-        toggleModalSucesso(); // Abre o modal de sucesso
+        toggleModalSucesso();
     };
 
     return (
@@ -95,8 +95,7 @@ const Modal = ({ isOpen, onClose }) => {
                     </div>
                 </div>
             </div>
-    
-            {/* Passando o username como prop para o ModalSucesso */}
+
             {modalSucessoOpen && <ModalSucesso username={username} msOpen={modalSucessoOpen} msClose={closeModalSucesso} />}
         </>
     );
