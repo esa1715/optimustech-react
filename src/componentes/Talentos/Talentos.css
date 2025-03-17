@@ -84,3 +84,17 @@
         height: auto;
     }
 }
+
+@media screen and (max-width: 450pc) {
+    .talentos {
+        width: 90%;
+    }
+    
+    .talentos__title {
+        font-size: 20px;
+    }
+
+    .talentos__sub {
+        font-size: 16px
+    }
+}

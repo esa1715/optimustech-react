@@ -3,7 +3,7 @@
     flex-direction: column;
     height: 407px;
     padding: 96px 0;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -21,6 +21,7 @@
     height: auto;
     padding: 0 32px;
     gap: 12px;
+    justify-content: center;
 }
 
 .cabecalho__tit h1 {
@@ -54,5 +55,15 @@
 
     .cabecalho__text {
         height: auto;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .cabecalho__content {
+        width: 90%;
+    }
+
+    .cabecalho__tit h1 {
+        font-size: 24px;
     }
 }

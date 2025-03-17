@@ -107,3 +107,21 @@
         padding: 5% 0 10% 0;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .formulario__text {
+        width: 90%;
+    }
+    
+    .formulario__tit {
+        font-size: 20px;
+    }
+
+    .formulario__sup {
+        font-size: 16px;
+    }
+
+    .direitos {
+        width: 90%;
+    }
+}
