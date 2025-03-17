@@ -3,7 +3,7 @@ import './Cabecalho.css'
 const Cabecalho = () => {
     return (
         <section className='cabecalho'>
-        <div classname='cabecalho__content'>
+        <div className='cabecalho__content'>
             <h2>Sobre nós</h2>
             <div className='cabecalho__tit'>
                 <h1>Por que somos diferentes?</h1>
